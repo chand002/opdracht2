@@ -1,0 +1,188 @@
+/*css styling artikel.html*/
+body{
+    margin-bottom: 15em;
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+h1, h2, h3, h4 {
+    font-family: Oswald, serif;
+    font-size: 700;
+    margin-bottom: 0;
+}
+
+p{
+    font-family: Quattrocento Sans, sans-serif;
+    font-size: 400;
+    line-height: 1.4em;
+    margin-bottom: 1.2em;
+    margin-top: 0;
+}
+
+/*styling the link tag*/
+a{
+    font-family: Oswald;
+    font-size: 700;
+    text-decoration: none;
+
+}
+
+a:visited{
+    color: #E8820C;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #0D7BFF;
+    text-decoration: none;
+}
+
+/*styling the image tag*/
+img{
+    border: 5px solid #FFEE1A;
+    border-radius: 60px 400px 400px 60px;
+    margin: 1.2em 0;
+}
+
+/*button uit een link tag maken*/
+a > p{
+    border: 3px solid #0D7BFF;
+    border-radius: 100px 100px;
+    color: #0D7BFF;
+    font: 10em;
+    margin: 1.2em 5em;
+    text-align: center;
+}
+
+a > p:hover{
+    background: #E8820C;
+    border-color: transparent;
+    box-shadow: 3px 3px 6px #9F9EB2;
+    color: white;
+}
+
+/*adding some textshadow*/
+.inleiding{
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-radius: 0 0 4em 4em;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 5px 5px rgba(0,0,0,0.3);
+}
+
+/*transition and transform*/
+.big > a {
+    color: #E8820C;
+    transition: 1.5s;
+}
+.big > a:hover {
+    color: #0D7BFF;
+    font-size: 3em;
+    transform: rotateY(360deg)
+}
+
+/*sibling combinator selector*/
+h2 + p{
+    font-style: italic;
+    margin-left: 2em;
+}
+
+
+
+/*css styling formulier.html*/
+
+form > fieldset > label{
+    display: block;
+}
+
+label, input{
+    margin-bottom: 0.4em;
+}
+
+.projectform{
+    display: block;
+}
+
+.stageform > fieldset > label{
+    display: block;
+}
+
+legend{
+    font-family: Oswald, serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+label{
+    font-family: Quattrocento Sans, sans-serif;
+    font-weight: 700;
+}
+
+fieldset{
+    border-radius: 2em 0 2em 0;
+    box-shadow: 3px 4px rgba(0,0,0,0.3);
+    margin: 14px 0 14px 0;
+}
+
+/*removing css fieldset inside fieldset*/
+fieldset > .remove{
+    border: none;
+    box-shadow: none;
+}
+
+/*center the table items*/
+label, input, textarea{
+    margin-left: 2em;
+}
+
+/*style input bar*/
+input{
+    border-radius: 5px 5px 5px 5px;
+    font-family: Oswald, serif;
+}
+
+/*use attribute selector*/
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    background: #DEDAED;
+    color: black;
+    font-size: 15pt;
+    height: 50px;
+    text-align: center;
+    transition: 1.5s;
+    width: 500px;
+}
+
+input[type="number"]:focus{
+    font-size: 15pt;
+    height: 40px;
+    text-align: center;
+    transition: 2s;
+    width: 300px;
+}
+
+/*style submit button*/
+.s-btn{
+    background: #E8820C;
+    border-radius: 80% 20% 80% 20%;
+    color: white;
+    font-family: Quattrocento Sans, sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    height: 10em;
+    margin: 2em 3em 0 3em;
+    transition: 1.5s;
+    width: 15em;
+}
+
+.s-btn:hover{
+    background: #0D7BFF;
+    border-radius: 20% 80% 20% 80%;
+    transition: 0.3s;
+}
+
+/*header reposition*/
+.headform{
+    font-size: 40pt;
+    text-align: center;
+}
